@@ -127,7 +127,7 @@ function setupRW() {
 
 function toggle_payload(pld){
 	if(pld == "restore"){
-		document.getElementById("progress").innerHTML="Restaurando Cache para Guia do Usuário... <font color=\"#F00\">ESPERE !!!</font>";
+		document.getElementById("progress").innerHTML="Restaurando Cache para Guia do Usuário ... <font color=\"#F00\"> ESPERE!!!</font>";
 		preloadScripts(['jb.js', 'preloader.js', 'restore.js', 'loader.js']);
 	}
 	if(window.postPayload)
@@ -139,10 +139,10 @@ function toggle_payload(pld){
 function payload_finished(payload)
 {
 	if(payload == "binloader"){
-		setTimeout(function(){document.getElementById("progress").innerHTML="Esperando para enviar o arquivo .BIN para a porta 9021"; }, 7000);
+		setTimeout(function(){document.getElementById("progress").innerHTML="Awaiting Payload!! Send Payload To Port 9021"; }, 7000);
 	} 
 	else{
-	    setTimeout(function(){document.getElementById("progress").innerHTML="Restauração concluída com <font color=\"#00FF12\">SUCESSO!! </font>Bons jogos!!"; }, 7000);
+	    setTimeout(function(){document.getElementById("progress").innerHTML="Restauração feita com <font color=\"#00FF12\">SUCESSO! </font> Bons jogos!!"; }, 7000);
 	}
 }
 
